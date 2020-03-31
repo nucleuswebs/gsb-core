@@ -1,0 +1,24 @@
+{
+  "name": "gloobus/gsb-core",
+  "description": "Gsb core system which implements the core structure of the application",
+  "type": "yii2-extension",
+  "authors": [
+    {
+      "name": "Tamas Zoltan Palecian",
+      "email": "palecian.tamas@gloobus.it"
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "ramsey/uuid": "^3.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "gloobus\\gsb\\": ""
+    }
+  },
+  "extra": {
+    "bootstrap": "gloobus\\gsb\\Bootstrap"
+  }
+}

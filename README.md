@@ -1,2 +1,2 @@
-# gsb-core
-The gsb core data
+# nucleo-soft
+The core
