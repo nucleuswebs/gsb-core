@@ -22,7 +22,7 @@ return [
      ******************************************************************************************************************/
     'controllerMap' => [
         'migrate' => [
-            'class' => 'nucleuswebs\\nucleo\\console\\controllers\\MigrationController',
+            'class' => 'gloobus\\gsb\\console\\controllers\\MigrationController',
         ],
     ],
 
@@ -30,7 +30,7 @@ return [
      ******************************************************************************************************************/
     'components'    => [
         'urlManager' => [
-            'class' => 'nucleuswebs\\nucleo\\web\\components\\UrlManager',
+            'class' => 'gloobus\\gsb\\web\\components\\UrlManager',
         ],
     ],
 ];

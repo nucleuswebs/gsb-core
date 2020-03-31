@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\api;
+namespace gloobus\gsb\modules\api;
 
 /**
  * Class Module

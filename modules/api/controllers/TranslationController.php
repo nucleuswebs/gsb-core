@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\api\controllers;
+namespace gloobus\gsb\modules\api\controllers;
 
 use gloobus\gsb\rest\Controller;
 
