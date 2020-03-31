@@ -20,17 +20,12 @@ class IdentityRepository extends Identity
 {
     public static function create( Identity $identity ): ?Identity
     {
-        $identity->password = Yii::$app->security->generatePasswordHash($identity);
-        $identity->is_confirmed = ( Yii::$app->user->emailConfirmation ) ? (int) false : (int) true;
+        $identity->password = Yii::$app->security->generatePasswordHash($identity->password);
+        $identity->is_confirmed = (int) false;
         $identity->is_organization = (int) $identity->is_organization;
         $identity->save();
 
         return $identity;
-    }
-
-    public static function update(): Identity
-    {
-
     }
 
     /**

@@ -9,9 +9,10 @@ use gloobus\gsb\rest\ActiveController;
  */
 class IdentityController extends ActiveController
 {
+    public $modelClass = 'gloobus\gsb\database\models\Identity';
 
     public function actionLogin()
     {
-
+        
     }
 }
