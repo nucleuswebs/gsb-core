@@ -6,7 +6,7 @@ use Yii;
 use yii\db\ActiveQuery;
 
 /**
- * This is the model class for table "nucleo_token".
+ * This is the model class for table "{{%token}}".
  *
  * @property string   $id
  * @property string   $type

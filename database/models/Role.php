@@ -5,7 +5,7 @@ namespace gloobus\gsb\database\models;
 use Yii;
 
 /**
- * This is the model class for table "nucleo_role".
+ * This is the model class for table "{{%role}}".
  *
  * @property string $id
  * @property string $name

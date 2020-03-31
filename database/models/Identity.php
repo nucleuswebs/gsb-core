@@ -6,7 +6,7 @@ use Yii;
 use yii\web\IdentityInterface;
 
 /**
- * This is the model class for table "nucleo_identity".
+ * This is the model class for table "{{%identity}}".
  *
  * @property string      $id
  * @property string      $email_address

@@ -5,7 +5,7 @@ namespace gloobus\gsb\database\models;
 use Yii;
 
 /**
- * This is the model class for table "nucleo_migration".
+ * This is the model class for table "{{%migration}}".
  *
  * @property string $version
  * @property string $alias
