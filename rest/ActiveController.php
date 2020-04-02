@@ -30,7 +30,7 @@ class ActiveController extends \yii\rest\ActiveController
             'class' => \yii\filters\Cors::class,
             'cors'  => [
                 'Origin'                           => [ '*', 'http://127.0.0.1:3000' ],
-                'Access-Control-Request-Method'    => [ 'GET', 'OPTION' ],
+                'Access-Control-Request-Method'    => [ 'GET', 'POST', 'OPTION' ],
                 'Access-Control-Request-Headers'   => [ '*' ],
                 'Access-Control-Allow-Credentials' => false,
                 'Access-Control-Expose-Headers'    => [ 'Access-Controll-Allow-Origin' ],
@@ -42,6 +42,7 @@ class ActiveController extends \yii\rest\ActiveController
             'authMethods' => [
                 HttpBearerAuth::class,
             ],
+            'except'      => [ 'options' ],
         ];
 
         $behaviors['contentNegotiator'] = [

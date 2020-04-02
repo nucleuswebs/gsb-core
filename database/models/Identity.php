@@ -88,7 +88,7 @@ class Identity extends \gloobus\gsb\database\ActiveRecord implements IdentityInt
     /**
      * Get the identity related tokens
      */
-    public function getTokens(): array
+    public function getTokens()
     {
         return $this->hasMany(Token::class, [ 'entity_id' => 'id' ]);
     }
@@ -133,5 +133,16 @@ class Identity extends \gloobus\gsb\database\ActiveRecord implements IdentityInt
     public function validateAuthKey( $authKey )
     {
         // TODO: Implement validateAuthKey() method.
+    }
+
+    /**
+     * Validates if the given password is correct or not for the current identity
+     *
+     * @param $password the password to validate
+     * @return bool whatever the password is valid or not
+     */
+    public function validatePassword( $password ): bool
+    {
+        return Yii::$app->security->validatePassword($password, $this->password);
     }
 }
